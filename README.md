@@ -15,8 +15,6 @@ To approach this problem, it was first developed EDA, feature engineering and mo
 
 **Exited:** The target variable `Exited` indicates whether a customer has churned (1) or not (0).
 
-**Dataset Split:** The provided dataset is divided into a training set and a testing set to train the model on a portion of the data and evaluate its performance on unseen data.
-
 **Performance Metrics:** To assess the effectiveness of the model, various evaluation metrics are used, including accuracy, precision, recall, F1-score, and AUC-ROC curve. These metrics help gauge the model's predictive capability and its ability to correctly identify customers who are likely to churn.
 
 
@@ -25,6 +23,7 @@ Please note that this project was initially developed using Python 3.10.6 and on
 
 
 **Clone the repository**
+
 To clone the repository and set up the development environment, follow the steps below:
 
 1. Clone the repository using the command:
@@ -56,6 +55,7 @@ Now you have successfully cloned the repository and set up the virtual environme
 
 
 **Install Kedro**
+
 To install Kedro, run:
 For more information, please check [Kedro Installation Documentation](https://docs.kedro.org/en/stable/get_started/install.html)
 
@@ -66,6 +66,7 @@ pip install kedro
 
 
 **Install dependencies**
+
 All necessary dependencies are located in `src/requirements.txt`.
 
 To install them, run:
@@ -90,4 +91,10 @@ Have a look at the file `src/tests/test_run.py` for instructions on how to write
 kedro test
 ```
 
-To configure the coverage threshold, go to the `.coveragerc` file.
+## Interactive Visualization
+
+You can acess the interactive visualization with
+
+```
+kedro viz
+```
