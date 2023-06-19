@@ -1,0 +1,30 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+abandono:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/abandono_clientes.csv
+
+abandono_teste:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/abandono_teste.csv
+  load_args:
+    sep: ';'
+
+preprocessed_abandono:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/preprocessed_abandono.pq
+
+preprocessed_abandono_teste:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/preprocessed_abandono_teste.pq
+
+model_input_table:
+  type: pandas.ParquetDataSet
+  filepath: data/03_primary/model_input_table.pq
+
+classifier:
+  type: pickle.PickleDataSet
+  filepath: data/06_models/classifier.pickle
+  versioned: true
