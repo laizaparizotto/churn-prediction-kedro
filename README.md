@@ -81,7 +81,7 @@ To install them, run:
 pip install -r src/requirements.txt
 ```
 
-## How to run your Kedro pipeline
+## How to run the pipeline
 
 You can run the Kedro project with:
 
