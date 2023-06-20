@@ -1,6 +1,6 @@
 # Data Science Challenge - Churn Prediction
 
-This is a Kedro repository that tackles a data science challenge: **predicting customer churn** for a fictional financial institution. The goal is to build an effective pipeline to a production-ready Machine Learning model to forecast customer churn accurately. 
+This is a Kedro repository that tackles a data science challenge of **predicting customer churn** for a fictional financial institution. The goal is to build an effective pipeline for a production-ready Machine Learning model to forecast customer churn accurately. 
 
 To approach this problem, it was first developed EDA, feature engineering and model training and evaluation using Jupyter Notebooks. The notebooks are located in `"kedro-environment-churn-prediction/churn-prediction/notebooks/"`. Feel free to visit the notebooks and check my reasoning behind the solution before running the pipeline. :)
 
@@ -12,8 +12,8 @@ To approach this problem, it was first developed EDA, feature engineering and mo
 
 
 ### Data Understanding:
-- The first dataset, named "Abandono_clientes" contains 10,000 rows and 13 columns, including a target column "Exited" with binary data (1 if the customer has churned, 0 if not). 
-- The second dataset, named "Abandono_teste", consists of 1,000 rows and 12 columns, excluding the "Exited" column. 
+- The first dataset, named `Abandono_clientes` contains 10,000 rows and 13 columns, including a target column "Exited" with binary data (1 if the customer has churned, 0 if not). 
+- The second dataset, named `Abandono_teste`, consists of 1,000 rows and 12 columns, excluding the `Exited` column. 
 
 ### Key Concepts:
 **Customer Churn:** Churn refers to the phenomenon of customers discontinuing their relationship with a company or service. In this context, it represents customers who have abandoned the financial institution.
