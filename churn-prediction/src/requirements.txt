@@ -16,3 +16,5 @@ pytest-mock>=1.7.1, <2.0
 pytest~=7.2
 scikit-learn~=1.0
 seaborn
+xgboost
+imblearn
