@@ -1,6 +1,6 @@
 # Data Science Challenge - Churn Prediction
 
-This is a Kedro repository that tackles a data science challenge: **predicting customer churn** for a fictional financial institution. The goal is to build an effective Machine Learning pipeline using two datasets to accurately forecast customer churn. 
+This is a Kedro repository that tackles a data science challenge: **predicting customer churn** for a fictional financial institution. The goal is to build an effective pipeline to a production-ready Machine Learning model to forecast customer churn accurately. 
 
 To approach this problem, it was first developed EDA, feature engineering and model training and evaluation using Jupyter Notebooks. The notebooks are located in `"kedro-environment-churn-prediction/churn-prediction/notebooks/"`. Feel free to visit the notebooks and check my reasoning behind the solution before running the pipeline. :)
 
@@ -23,7 +23,6 @@ To approach this problem, it was first developed EDA, feature engineering and mo
 **Exited:** The target variable `Exited` indicates whether a customer has churned (1) or not (0).
 
 **Performance Metrics:** To assess the effectiveness of the model, various evaluation metrics are used, including accuracy, precision, recall, F1-score, and AUC-ROC curve. These metrics help gauge the model's predictive capability and its ability to correctly identify customers who are likely to churn.
-
 
 ## Getting started
 Please note that this project was initially developed using Python 3.10.6 and on the Ubuntu operating system. 
@@ -90,13 +89,9 @@ You can run the Kedro project with:
 kedro run
 ```
 
-## How to test your Kedro project
+This will run the pipeline, which consists in data loading, preprocessing, training and evaluating RandomForestClassifier, and finally prediciting for the test set.
 
-Have a look at the file `src/tests/test_run.py` for instructions on how to write your tests. You can run your tests as follows:
-
-```
-kedro test
-```
+**Final results will be stored at `'/churn-prediction/data/07_model_output/resultado_teste.csv'`**                                     *
 
 ## Interactive Visualization
 
@@ -105,3 +100,5 @@ You can acess the interactive visualization with
 ```
 kedro viz
 ```
+
+![The final pipeline can be seen below:](churn-prediction/docs/pipeline.png)
