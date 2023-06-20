@@ -13,20 +13,14 @@ def create_pipeline(**kwargs) -> Pipeline:
             node(
                 func=preprocess_abandono,
                 inputs="abandono",
-                outputs="preprocessed_abandono",
-                name="preprocess_abandono_node",
+                outputs="model_input_table",
+                name="create_model_input_table_node",
             ),
             node(
                 func=preprocess_abandono,
                 inputs="abandono_teste",
                 outputs="preprocessed_abandono_teste",
                 name="preprocess_abandono_teste_node",
-            ),
-            node(
-                func=preprocess_abandono,
-                inputs="abandono",
-                outputs="model_input_table",
-                name="create_model_input_table_node",
             ),
         ]
     )

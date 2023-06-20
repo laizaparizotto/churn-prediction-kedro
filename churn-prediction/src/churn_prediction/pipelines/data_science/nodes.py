@@ -80,3 +80,27 @@ def evaluate_model(
     logger.info("Recall: %.3f", recall)
     logger.info("F1-score: %.3f", f1)
     logger.info("Roc Auc: %.3f", roc_auc)
+
+
+def test_model(
+    classifier: RandomForestClassifier, preprocessed_abandono_teste: pd.DataFrame
+):
+    """Calculates and logs the coefficient of determination.
+
+    Args:
+        classifier: Trained model.
+        X_test: Testing data of independent features.
+        y_test: Testing data for price.
+    """
+    # Perform standard scaling on the features
+    scaler = StandardScaler()
+    abandono_teste = scaler.fit_transform(preprocessed_abandono_teste)
+
+    # Make predictions on the test set
+    y_pred = classifier.predict(abandono_teste)
+    y_pred = pd.DataFrame(y_pred, columns=["Exited"])
+
+    logger = logging.getLogger(__name__)
+    logger.info("Prediction for test set complety.")
+    logger.info("Prediction file stored at '/churn-prediction/data/07_model_output/resultado_teste.csv'")
+    return y_pred

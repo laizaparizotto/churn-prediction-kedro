@@ -4,7 +4,7 @@ generated using Kedro 0.18.10
 """
 from kedro.pipeline import Pipeline, node, pipeline
 
-from .nodes import evaluate_model, split_data, train_model
+from .nodes import evaluate_model, split_data, train_model, test_model
 
 
 def create_pipeline(**kwargs) -> Pipeline:
@@ -27,6 +27,12 @@ def create_pipeline(**kwargs) -> Pipeline:
                 inputs=["classifier", "X_test", "y_test"],
                 outputs=None,
                 name="evaluate_model_node",
+            ),
+            node(
+                func=test_model,
+                inputs=["classifier", "preprocessed_abandono_teste"],
+                outputs="resultado_teste",
+                name="test_model_node",
             ),
         ]
     )

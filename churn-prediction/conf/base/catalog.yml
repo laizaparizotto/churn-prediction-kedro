@@ -28,3 +28,7 @@ classifier:
   type: pickle.PickleDataSet
   filepath: data/06_models/classifier.pickle
   versioned: true
+
+resultado_teste:
+  type: pandas.CSVDataSet
+  filepath: data/07_model_output/resultado_teste.csv
