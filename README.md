@@ -5,7 +5,9 @@ This is a Kedro repository that tackles a data science challenge: **predicting c
 To approach this problem, it was first developed EDA, feature engineering and model training and evaluation using Jupyter Notebooks. The notebooks are located in `"kedro-environment-churn-prediction/churn-prediction/notebooks/"`. Feel free to visit the notebooks and check my reasoning behind the solution before running the pipeline. :)
 
 [Exaploratory Data Analysis](churn-prediction/notebooks/EDA.ipynb)
+
 [Feature Engineering](churn-prediction/notebooks/feature_engineering.ipynb)
+
 [Model Training and Evaluation](churn-prediction/notebooks/model_training.ipynb)
 
 
