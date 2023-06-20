@@ -1,0 +1,4 @@
+DataFrame,Sampling Technique,Model,Accuracy,Precision,Recall,F1-Score,AUC-ROC
+features_second_loop,All Data,RandomForestClassifier,0.871,0.7647058823529411,0.4961832061068702,0.6018518518518519,0.7294232769800064
+features_second_loop,Undersampling,RandomForestClassifier,0.7825,0.4672897196261682,0.7633587786259542,0.5797101449275364,0.7752699306944331
+features_second_loop,Oversampling,RandomForestClassifier,0.8585,0.6833333333333333,0.5216284987277354,0.5916305916305916,0.7312560664142722
