@@ -4,6 +4,11 @@ This is a Kedro repository that tackles a data science challenge: **predicting c
 
 To approach this problem, it was first developed EDA, feature engineering and model training and evaluation using Jupyter Notebooks. The notebooks are located in `"kedro-environment-churn-prediction/churn-prediction/notebooks/"`. Feel free to visit the notebooks and check my reasoning behind the solution before running the pipeline. :)
 
+[Exaploratory Data Analysis](churn-prediction/notebooks/EDA.ipynb)
+[Feature Engineering](churn-prediction/notebooks/feature_engineering.ipynb)
+[Model Training and Evaluation](churn-prediction/notebooks/model_training.ipynb)
+
+
 ### Data Understanding:
 - The first dataset, named "Abandono_clientes" contains 10,000 rows and 13 columns, including a target column "Exited" with binary data (1 if the customer has churned, 0 if not). 
 - The second dataset, named "Abandono_teste", consists of 1,000 rows and 12 columns, excluding the "Exited" column. 
