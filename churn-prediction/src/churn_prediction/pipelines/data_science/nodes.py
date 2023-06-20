@@ -98,8 +98,9 @@ def test_model(
 
     # Make predictions on the test set
     y_pred = classifier.predict(abandono_teste)
-    y_pred = pd.DataFrame(y_pred, columns=["Exited"])
+    y_pred = pd.DataFrame(y_pred, columns=["Exited"]).reset_index().rename(columns={"index": "RowNumber"})
 
+    # Logger
     logger = logging.getLogger(__name__)
     logger.info("Prediction for test set complety.")
     logger.info("Prediction file stored at '/churn-prediction/data/07_model_output/resultado_teste.csv'")
