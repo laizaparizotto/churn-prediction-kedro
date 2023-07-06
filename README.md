@@ -1,4 +1,4 @@
-# Data Science Challenge - Churn Prediction
+# Churn Prediction with Kedro Framework
 
 This is a Kedro repository that tackles a data science challenge of **predicting customer churn** for a fictional financial institution. The goal is to build an effective pipeline for a production-ready Machine Learning model to forecast customer churn accurately. 
 
