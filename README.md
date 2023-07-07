@@ -34,12 +34,12 @@ To clone the repository and set up the development environment, follow the steps
 
 1. Clone the repository using the command:
    ```
-   git clone https://github.com/laizaparizotto/kedro-environment-churn-prediction.git
+   git clone https://github.com/laizaparizotto/churn-prediction-kedro.git
    ```
 
 2. Change to the cloned repository directory:
    ```
-   cd kedro-environment-churn-prediction
+   cd churn-prediction-kedro
    ```
 
 3. Create a virtual environment using `venv`:
