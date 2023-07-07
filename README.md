@@ -2,7 +2,7 @@
 
 This is a Kedro repository that tackles a data science challenge of **predicting customer churn** for a fictional financial institution. The goal is to build an effective pipeline for a production-ready Machine Learning model to forecast customer churn accurately. 
 
-To approach this problem, it was first developed EDA, feature engineering and model training and evaluation using Jupyter Notebooks. The notebooks are located in `"kedro-environment-churn-prediction/churn-prediction/notebooks/"`. Feel free to visit the notebooks and check my reasoning behind the solution before running the pipeline. :)
+To approach this problem, it was first developed EDA, feature engineering and model training and evaluation using Jupyter Notebooks. The notebooks are located in `"churn-prediction-kedro/churn-prediction/notebooks/"`. Feel free to visit the notebooks and check my reasoning behind the solution before running the pipeline. :)
 
 [Exaploratory Data Analysis](churn-prediction/notebooks/EDA.ipynb)
 
